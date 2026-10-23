@@ -57,7 +57,7 @@
         // Simpan token dan user setelah daftar.
         localStorage.setItem('token', data.token);
         localStorage.setItem('user', JSON.stringify(data.user));
-        window.location.href = '/pesanan';
+        window.location.href = '/home';
       } else if (res.status === 422) {
         // gagal validasi: gabungkan semua pesan error
         const pesan = Object.values(data.errors).flat();
